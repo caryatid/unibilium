@@ -1,6 +1,6 @@
 
 all:
-	make CC="../../install/bin/musl-gcc -static -no-pie" CFLAGS="-fno-stack-protector -fPIC" LDFLAGS="-static -L../../install/lib"
+	make CFLAGS="-fPIC -fPIE" 
 
 install:
 	make install
